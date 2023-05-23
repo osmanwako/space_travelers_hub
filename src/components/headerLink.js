@@ -11,6 +11,13 @@ const HeaderLink = () => (
       <li>
         <Link aria-current="page" className="nav-link active-link" to="./rockets">Rockets</Link>
       </li>
+      <li>
+        <Link className="nav-link" to="./missions">Missions</Link>
+      </li>
+      <li className="link-mid" />
+      <li>
+        <Link className="nav-link" to="./myprofile">My Profile</Link>
+      </li>
     </ul>
   </header>
 );
