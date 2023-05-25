@@ -1,4 +1,9 @@
+import { useDispatch } from 'react-redux';
+import { reservation } from '../redux/rockets/rocketslice';
+
 function RocketInformation(data) {
+  const dispatch = useDispatch();
+
   const { rocket } = data;
   return (
     <>
@@ -11,7 +16,7 @@ function RocketInformation(data) {
         </h3>
         <p>
           {rocket.description}
-          <button type="button" className={rocket.reserved ? 'rbtn-cancel' : 'rbtn-reserve'}>
+          <button type="button" className={rocket.reserved ? 'rbtn-cancel' : 'rbtn-reserve'} onClick={() => dispatch(reservation(rocket.id))}>
             {rocket.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
           </button>
         </p>
