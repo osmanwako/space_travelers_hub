@@ -33,6 +33,12 @@ export const Rocketslice = createSlice({
   name: 'rocketstore',
   initialState,
   reducers: {
+    reservation: (state, action) => {
+      const rocket = state.rockets.find((item) => item.id === action.payload);
+      if (rocket) {
+        rocket.reserved = true;
+      }
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(fetchRockets.pending, (state) => {
