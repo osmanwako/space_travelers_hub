@@ -8,7 +8,7 @@ const Rockets = () => {
   const load = useSelector((state) => state.rocketstore.load);
   useEffect(() => {
     dispatch(fetchRockets());
-  }, [load]);
+  }, [load, dispatch]);
 
   const {
     status, message, rockets,
