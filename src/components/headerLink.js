@@ -10,8 +10,7 @@ const HeaderLink = () => (
     <ul className="nav-links">
       <li>
         <NavLink
-          exact
-          activeClassName="active-link"
+          exact="true"
           className="nav-link"
           to="/rockets"
         >
@@ -20,8 +19,7 @@ const HeaderLink = () => (
       </li>
       <li>
         <NavLink
-          exact
-          activeClassName="active-link"
+          exact="true"
           className="nav-link"
           to="/missions"
         >
@@ -31,8 +29,7 @@ const HeaderLink = () => (
       <li className="link-mid" />
       <li>
         <NavLink
-          exact
-          activeClassName="active-link"
+          exact="true"
           className="nav-link"
           to="/myprofile"
         >
