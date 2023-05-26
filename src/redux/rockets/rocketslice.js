@@ -66,5 +66,5 @@ export const Rocketslice = createSlice({
     });
   },
 });
-
+export const { reservation } = Rocketslice.actions;
 export default Rocketslice.reducer;
