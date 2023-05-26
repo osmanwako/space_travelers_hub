@@ -78,6 +78,16 @@
   width: 100%;
   height: auto;
 }
+.p-desc {
+  padding: 10px;
+}
+
+.span-badge {
+  padding: 4px 10px;
+  background-color: rgb(107, 96, 93);
+  color: #fff;
+  border-radius: 5px;
+}
 
 .mission-container {
   display: grid;
