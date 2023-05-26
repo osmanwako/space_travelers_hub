@@ -84,15 +84,19 @@
 }
 
 .span-badge {
-  padding: 4px 10px;
-  background-color: rgb(107, 96, 93);
+  padding: 6px;
+  background-color: rgb(145, 136, 133);
   color: #fff;
   border-radius: 5px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mission-container {
   display: grid;
-  grid-template-columns: 2fr 9fr 2fr 1fr;
+  grid-template-columns: 2fr 9fr 2fr 2fr;
   column-gap: 0;
   row-gap: 0;
   margin-top: 20px;
@@ -100,15 +104,18 @@
 
 .mission-item {
   padding: 10px;
-  border: 0.5px solid #000;
+  border: 0.2px solid #2f2e2e;
 }
 
 .btn-join {
-  padding: 6px 10px;
-  text-align: left;
-  color: #0290ff;
-  background: white;
-  cursor: pointer;
+  padding: 6px 14px;
+  background-color: #0290ff;
+  color: #f0f1f3;
+  border: 1px solid #e9eaeb;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rbtn-reserve {
@@ -119,6 +126,7 @@
   border: none;
   color: #fff;
   margin: 10px;
+  cursor: pointer;
 }
 
 .rbtn-cancel {
@@ -128,4 +136,28 @@
   color: #f00;
   border: 1px solid #f98;
   margin: 10px;
+  cursor: pointer;
+}
+
+.myprofile {
+  margin: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.myprofile-container {
+  width: 49%;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0;
+  row-gap: 0;
+  margin-top: 20px;
+}
+
+.myprofile-item {
+  padding: 10px;
+  border: 0.5px solid #eacfcf;
 }
