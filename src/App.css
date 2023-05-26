@@ -113,9 +113,7 @@
   color: #f0f1f3;
   border: 1px solid #e9eaeb;
   font-size: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
 }
 
 .btn-join.leave {
@@ -128,6 +126,16 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.rbtn-reserve {
+  display: block;
+  padding: 6px 10px;
+  background-color: #67f;
+  line-height: 25px;
+  border: none;
+  color: #fff;
+  margin: 10px;
 }
 
 .rbtn-cancel {
