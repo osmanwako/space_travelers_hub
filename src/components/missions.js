@@ -1,29 +1,69 @@
 import React, { useEffect } from 'react';
+import { Table } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMissions } from '../redux/missions/missionSlice';
-import style from './missions.module.css';
 
-const Missions = () => {
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const MissionsList = () => {
   const dispatch = useDispatch();
   const { missions } = useSelector((state) => state.mission);
-  console.log(missions);
+
   useEffect(() => {
     dispatch(fetchMissions());
-  }, [dispatch, missions]);
+  }, [dispatch]);
+
   return (
-    <div className="mission-container">
-      <table className={style.table}>
-        <thead>
-          <tr className={style.row}>
-            <th className={style.column}>Mission</th>
-            <th className={style.column}>Description</th>
-            <th className={style.column}>Status</th>
-            <th className={style.column}>{' '}</th>
+    <Table striped bordered size="lg" className="container my-3" responsive="lg">
+      <thead>
+        <tr>
+          <th style={{ backgroundColor: '#f8f9fa' }}>Mission</th>
+          <th style={{ backgroundColor: '#f8f9fa' }}>Description</th>
+          <th style={{ backgroundColor: '#f8f9fa', width: '12%' }}>Status</th>
+          <th style={{ backgroundColor: '#f8f9fa', width: '12%' }}> </th>
+        </tr>
+      </thead>
+      <tbody>
+        {missions.map((mission) => (
+          <tr key={mission.id}>
+            <td>{mission.name}</td>
+            <td>{mission.description}</td>
+            <td>
+              {!mission.canceled ? (
+                <div className="btns d-flex justify-content-center align-items-center">
+                  <button
+                    type="button"
+                    className="btn btn-outline-secondary btn-sm"
+                  >
+                    NOT A MEMBER
+                  </button>
+                </div>
+              ) : (
+                <div className="btns justify-content-center align-items-center">
+                  <button
+                    type="button"
+                    className="btn btn-info text-white"
+                    aria-label="Active member"
+                  >
+                    Active Member
+                  </button>
+                </div>
+              )}
+            </td>
+            <td>
+              <button
+                type="button"
+                className="btn btn-outline-dark btn-sm d-flex justify-content-center"
+                onClick={() => dispatch(fetchMissions(mission.id))}
+              >
+                {!mission.canceled ? 'Join Mission' : 'Leave Mission'}
+              </button>
+            </td>
           </tr>
-        </thead>
-      </table>
-    </div>
+        ))}
+      </tbody>
+    </Table>
   );
 };
 
-export default Missions;
+export default MissionsList;
