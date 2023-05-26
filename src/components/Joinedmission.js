@@ -7,7 +7,7 @@ const Joinedmission = () => {
     return (
       <div className="myprofile-container">
         <div className="myprofile-item">
-          You did not mission so far.
+          You did not join any mission so far.
         </div>
       </div>
     );
@@ -15,10 +15,10 @@ const Joinedmission = () => {
 
   return (
     <div className="myprofile-container">
-      <h3>My Rockets</h3>
+      <h3>My Missions</h3>
       {
-                joinlists.map((join) => (<div className="myprofile-item" key={join.id}>{join.name}</div>))
-            }
+        joinlists.map((join) => (<div className="myprofile-item" key={join.id}>{join.name}</div>))
+      }
     </div>
   );
 };
