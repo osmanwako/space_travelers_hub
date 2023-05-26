@@ -1,10 +1,9 @@
-import React from 'react';
+import Joinedmission from './Joinedmission';
 
 const MyProfile = () => (
-  <>
-    <h1>MyProfile</h1>
-    <h3>Page Under Construction</h3>
-  </>
+  <div className="myprofile">
+    <Joinedmission />
+  </div>
 );
 
 export default MyProfile;
