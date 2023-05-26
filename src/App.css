@@ -129,7 +129,15 @@
   align-items: center;
   cursor: pointer;
 }
-
+.rbtn-reserve {
+  display: block;
+  padding: 6px 10px;
+  background-color: #67f;
+  line-height: 25px;
+  border: none;
+  color: #fff;
+  margin: 10px;
+}
 .rbtn-cancel {
   display: block;
   padding: 6px 10px;
