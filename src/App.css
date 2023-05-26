@@ -116,6 +116,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn-join {
+  padding: 6px 10px;
+  text-align: left;
+  color: #0290ff;
+  background: white;
   cursor: pointer;
 }
 
