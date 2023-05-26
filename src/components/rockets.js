@@ -14,13 +14,13 @@ const Rockets = () => {
     status, message, rockets,
   } = useSelector((state) => state.rocketstore);
   if (status === 'pending' || status === 'idle') {
-    return <div className="grid-container">Loading ...</div>;
+    return <div className="rocket-container">Loading ...</div>;
   }
   if (status === 'rejected' || status === 'idle') {
-    return <div className="grid-container">{message}</div>;
+    return <div className="rocket-container">{message}</div>;
   }
   return (
-    <div className="grid-container">
+    <div className="rocket-container">
       {
         rockets.map((rocket) => (<RocketInformation key={rocket.id} rocket={rocket} />))
       }
