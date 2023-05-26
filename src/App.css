@@ -118,14 +118,15 @@
   align-items: center;
 }
 
-.rbtn-reserve {
-  display: block;
-  padding: 6px 10px;
-  background-color: #67f;
-  line-height: 25px;
-  border: none;
-  color: #fff;
-  margin: 10px;
+.btn-join.leave {
+  padding: 6px 14px;
+  background-color: #dd7d08;
+  color: #f0f1f3;
+  border: 1px solid #e9eaeb;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -134,7 +135,7 @@
   padding: 6px 10px;
   background-color: #fff;
   color: #f00;
-  border: 1px solid #f98;
+  border: 1px solid rgb(38, 37, 37);
   margin: 10px;
   cursor: pointer;
 }
@@ -160,4 +161,8 @@
 .myprofile-item {
   padding: 10px;
   border: 0.5px solid #eacfcf;
+}
+
+.span-badge.active {
+  background-color: rgb(78, 148, 78);
 }
