@@ -1,10 +1,9 @@
-import React from 'react';
+import Reserverocket from './reserverocket';
 
 const MyProfile = () => (
-  <>
-    <h1>MyProfile</h1>
-    <h3>Page Under Construction</h3>
-  </>
+  <div className="myprofile">
+    <Reserverocket />
+  </div>
 );
 
 export default MyProfile;
