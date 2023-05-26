@@ -1,0 +1,174 @@
+.nav-header {
+  border-bottom: #0290ff 0.02px solid;
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar {
+  padding: 2px 4%;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-brand {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.65rem;
+  font-weight: 300;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  color: #0290ff;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.link-mid {
+  padding: 10px 0;
+  width: 0;
+  height: 20px;
+  border-left: 1px #000 solid;
+}
+
+.rocket-container {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 20px;
+}
+
+.rocket-desc {
+  background-color: #e8e8e8;
+}
+
+.rocket-gallery {
+  background-color: beige;
+}
+
+.rocket-img {
+  width: 100%;
+  height: auto;
+}
+
+.p-desc {
+  padding: 10px;
+}
+
+.span-badge {
+  padding: 6px;
+  background-color: rgb(145, 136, 133);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.mission-container {
+  display: grid;
+  grid-template-columns: 2fr 9fr 2fr 2fr;
+  column-gap: 0;
+  row-gap: 0;
+  margin-top: 20px;
+}
+
+.mission-item {
+  padding: 10px;
+  border: 0.2px solid #2f2e2e;
+}
+
+.btn-join {
+  padding: 6px 14px;
+  background-color: #0290ff;
+  color: #f0f1f3;
+  border: 1px solid #e9eaeb;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.btn-join.leave {
+  padding: 6px 14px;
+  background-color: #dd7d08;
+  color: #f0f1f3;
+  border: 1px solid #e9eaeb;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rbtn-reserve {
+  display: block;
+  padding: 6px 10px;
+  background-color: #67f;
+  line-height: 25px;
+  border: none;
+  color: #fff;
+  margin: 10px;
+}
+
+.rbtn-cancel {
+  display: block;
+  padding: 6px 10px;
+  background-color: #fff;
+  color: #f00;
+  border: 1px solid rgb(38, 37, 37);
+  margin: 10px;
+  cursor: pointer;
+}
+
+.myprofile {
+  margin: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.myprofile-container {
+  width: 49%;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0;
+  row-gap: 0;
+  margin-top: 20px;
+}
+
+.myprofile-item {
+  padding: 10px;
+  border: 0.5px solid #eacfcf;
+}
+
+.span-badge.active {
+  background-color: rgb(78, 148, 78);
+}
