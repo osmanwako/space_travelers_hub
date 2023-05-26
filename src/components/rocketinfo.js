@@ -3,6 +3,7 @@ import { reservation } from '../redux/rockets/rocketslice';
 
 function RocketInformation(data) {
   const dispatch = useDispatch();
+
   const { rocket } = data;
   return (
     <>
@@ -13,7 +14,8 @@ function RocketInformation(data) {
         <h3>
           {rocket.name}
         </h3>
-        <p>
+        <p className="p-desc">
+          {rocket.reserved ? <span className="span-badge">Reserved</span> : ''}
           {rocket.description}
           <button type="button" className={rocket.reserved ? 'rbtn-cancel' : 'rbtn-reserve'} onClick={() => dispatch(reservation(rocket.id))}>
             {rocket.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
