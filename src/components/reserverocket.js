@@ -7,7 +7,7 @@ const Reserverocket = () => {
     return (
       <div className="myprofile-container">
         <div className="myprofile-item">
-          You did not mission so far.
+          You did not reserve any rocket so far.
         </div>
       </div>
     );
@@ -17,8 +17,8 @@ const Reserverocket = () => {
     <div className="myprofile-container">
       <h3>My Rockets</h3>
       {
-                reservelists.map((reserve) => (<div className="myprofile-item" key={reserve.id}>{reserve.name}</div>))
-            }
+        reservelists.map((reserve) => (<div className="myprofile-item" key={reserve.id}>{reserve.name}</div>))
+      }
     </div>
   );
 };
